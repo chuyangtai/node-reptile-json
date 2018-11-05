@@ -1,0 +1,26 @@
+body {
+  padding: 20px 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+table{
+  margin-bottom: 20px;
+}
+table td{
+  border: 1px solid #eee;
+  padding:10px;
+}
+table td:nth-child(odd){
+  background-color: #F7F7F7;
+}
+pre{
+  width: auto;
+  word-wrap: break-word; white-space: pre-wrap;
+  max-height: 300px;
+  overflow-y: scroll;
+  background-color: #F7F7F7;
+  max-width: 500px;
+}

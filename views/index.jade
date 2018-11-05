@@ -1,0 +1,294 @@
+extends layout
+
+block content
+    h1= title
+    p
+        b 1) 今日就诊信息
+    p 接口地址：
+    a(href="/dataDispaly") /dataDispaly
+    p 返回值：
+    pre.format {"ydzf":"0322","sxzz":"0331","rydj":"0123","yygh":"1362","mzjz":"3538","jkdady":3804}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td ydzf
+            td 移动支付
+            td sxzz
+            td 双向转诊
+            td rydj
+            td 入院登记
+            td yygh
+            td 预约挂号
+            td mzjz
+            td 门诊就诊
+            td jkdady
+            td 健康档案调阅
+    p
+        b 2) 实时就诊信息
+    p 接口地址：
+    a(href="/dataLists") /dataLists
+    p 返回值：
+    pre.format [{"Dept_name":"鹿山街道社区卫生服务中心","name":"胡金土","sex":"下转","type":"5","visit_organization_name":"470331277","warehousing_dt":"Wed Oct 24 2018 09:39:59 GMT+0800 (中国标准时间)"},{"Dept_name":"富阳区第二人民医院","name":"陈晓平","sex":"上转","type":"5","visit_organization_name":"470331250","warehousing_dt":"Wed Oct 24 2018 09:39:59 GMT+0800 (中国标准时间)"},{"Dept_name":"妇科门诊","name":"毛婵宁","sex":null,"type":"4","visit_organization_name":"富阳区第一人民医院","warehousing_dt":"Wed Oct 24 2018 09:39:59 GMT+0800 (中国标准时间)"},{"Dept_name":"内科门诊","name":"方东胜","sex":null,"type":"4","visit_organization_name":"富阳区第一人民医院","warehousing_dt":"Wed Oct 24 2018 09:39:59 GMT+0800 (中国标准时间)"},{"Dept_name":"富阳区第一人民医院","name":"袁梅凤","sex":"上转","type":"5","visit_organization_name":"470333299","warehousing_dt":"Wed Oct 24 2018 09:39:59 GMT+0800 (中国标准时间)"}]
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td type
+            td 1:门诊急诊,2:移动支付,3:入院人次,4:预约挂号,5:双向转诊
+            td name
+            td 就诊人姓名
+            td warehousing_dt
+            td 时间
+            td visit_organization_name
+            td 医院名称
+            td Dept_name
+            td 就诊科室
+            td sex
+            td 上转/下转
+    p
+        b 3) 支付数据
+    p 接口地址：
+    a(href="/payDispaly") /payDispaly
+    p 返回值：
+    pre.format {"alipay":"204","wxpay":"20","unpay":"","wmpay":"136","smkpay":"109"}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td alipay
+            td 支付宝
+            td wxpay
+            td 微信
+            td unpay
+            td 银联
+            td wmpay
+            td 微脉
+            td smkpay
+            td 市民卡账户
+    p
+        b 4) 预约挂号统计与分析(年)
+    p 接口地址：
+    a(href="/registerPerYear") /registerPerYear
+    p 返回值：
+    pre.format {"number":{"xAxis":["201710","201711","201712","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810"],"source":[24727,95984,104778,115381,79269,108790,109331,118465,115024,122540,120976,113413,93837]},"ageData":{"ratedata":{"xAxis":["按时就诊","迟到15分钟以内","迟到15到30分钟","迟到30分钟以上"],"source":[261427,24762,17277,45458],"pie":[{"value":"261427","name":"按时就诊","selected":true},{"value":"24762","name":"迟到15分钟以内"},{"value":"17277","name":"迟到15到30分钟"},{"value":"45458","name":"迟到30分钟以上"}]}},"ratedata":{"ageData":{"xAxis":["0-18岁","18-30岁","30-40岁","40-50岁","50-60岁","60岁以上"],"source":[286207,245523,229165,180039,171056,189974],"pie":[{"value":"286207","name":"0-18岁","selected":true},{"value":"245523","name":"18-30岁"},{"value":"229165","name":"30-40岁"},{"value":"180039","name":"40-50岁"},{"value":"171056","name":"50-60岁"},{"value":"189974","name":"60岁以上"}]}}}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td number
+            td 预约挂号统计数据
+            td xAxis
+            td x轴
+            td source
+            td 预约数量
+    table(cellspacing=0)
+        tr
+            td rateData
+            td 按就诊情况分析
+            td xAxis
+            td x轴
+            td source
+            td 预约数量
+            td pie
+            td 饼图
+    table(cellspacing=0)
+        tr
+            td ageData
+            td 按年龄分析
+            td xAxis
+            td x轴
+            td source
+            td 预约数量
+            td pie
+            td 饼图
+    p
+        b 5) 签约统计(年)
+    p 接口地址：
+    a(href="/signStatistics") /signStatistics
+    p 返回值：
+    pre.format {"familySign":{"totalSign":233021,"i":25,"totalPercent":"77.13","signData":[{"OrgName":"新登镇社区卫生服务中心","SingNum":"21979","SingPercent":"9.43","RenewalPercent":"71.18"},{"OrgName":"万市社区卫生服务中心","SingNum":"8334","SingPercent":"3.58","RenewalPercent":"83.2"},{"OrgName":"场口社区卫生服务中心","SingNum":"13507","SingPercent":"5.8","RenewalPercent":"81.9"},{"OrgName":"大源社区卫生服务中心","SingNum":"15354","SingPercent":"6.59","RenewalPercent":"79.2"},{"OrgName":"富春街道社区卫生服务中心","SingNum":"46585","SingPercent":"19.99","RenewalPercent":"70.69"},{"OrgName":"东洲街道社区卫生服务中心","SingNum":"17245","SingPercent":"7.4","RenewalPercent":"77.36"},{"OrgName":"春江街道社区卫生服务中心","SingNum":"10464","SingPercent":"4.49","RenewalPercent":"71.88"},{"OrgName":"鹿山街道社区卫生服务中心","SingNum":"7898","SingPercent":"3.39","RenewalPercent":"77.43"},{"OrgName":"受降镇社区卫生服务中心","SingNum":"6728","SingPercent":"2.89","RenewalPercent":"75.22"},{"OrgName":"高桥镇社区卫生服务中心","SingNum":"11917","SingPercent":"5.11","RenewalPercent":"74.33"},{"OrgName":"龙门镇社区卫生服务中心","SingNum":"2476","SingPercent":"1.06","RenewalPercent":"80.06"},{"OrgName":"新桐乡社区卫生服务中心","SingNum":"4896","SingPercent":"2.1","RenewalPercent":"83.71"},{"OrgName":"春建乡社区卫生服务中心","SingNum":"3123","SingPercent":"1.34","RenewalPercent":"87.78"},{"OrgName":"永昌镇社区卫生服务中心","SingNum":"3644","SingPercent":"1.56","RenewalPercent":"76.75"},{"OrgName":"胥口镇社区卫生服务中心","SingNum":"6043","SingPercent":"2.59","RenewalPercent":"75"},{"OrgName":"渌渚镇社区卫生服务中心","SingNum":"5673","SingPercent":"2.43","RenewalPercent":"76.99"},{"OrgName":"环山乡社区卫生服务中心","SingNum":"3998","SingPercent":"1.72","RenewalPercent":"73.51"},{"OrgName":"常安镇社区卫生服务中心","SingNum":"7939","SingPercent":"3.41","RenewalPercent":"72.76"},{"OrgName":"湖源乡社区卫生服务中心","SingNum":"4031","SingPercent":"1.73","RenewalPercent":"78.32"},{"OrgName":"上官乡社区卫生服务中心","SingNum":"2976","SingPercent":"1.28","RenewalPercent":"78.17"},{"OrgName":"常绿镇社区卫生服务中心","SingNum":"5054","SingPercent":"2.17","RenewalPercent":"89.17"},{"OrgName":"灵桥镇社区卫生服务中心","SingNum":"7928","SingPercent":"3.4","RenewalPercent":"76.94"},{"OrgName":"里山镇社区卫生服务中心","SingNum":"3590","SingPercent":"1.54","RenewalPercent":"82.74"},{"OrgName":"渔山乡社区卫生服务中心","SingNum":"4346","SingPercent":"1.87","RenewalPercent":"75.88"},{"OrgName":"洞桥镇社区卫生服务中心","SingNum":"7293","SingPercent":"3.13","RenewalPercent":"80.83"}]},"creditSign":{"totalSign":308679,"signData":[{"CardType":null,"EndDate":null,"OrgCode":"0000","OrgName":"富阳区卫生系统","OrgType":null,"SingNum":105,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"wsj","OrgName":"富阳区卫计局","OrgType":null,"SingNum":57619,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470331277","OrgName":"富阳区第一人民医院","OrgType":null,"SingNum":120088,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470331293","OrgName":"富阳区第二人民医院","OrgType":null,"SingNum":3300,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"729091015","OrgName":"富阳区中医院","OrgType":null,"SingNum":18956,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470331285","OrgName":"富阳区妇幼保健院","OrgType":null,"SingNum":10036,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470332560","OrgName":"富阳中医骨伤医院","OrgType":null,"SingNum":37153,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470332499","OrgName":"富阳区第三人民医院","OrgType":null,"SingNum":171,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"PDY110016","OrgName":"新登镇社区卫生服务中心","OrgType":null,"SingNum":3443,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470331269","OrgName":"万市社区卫生服务中心","OrgType":null,"SingNum":1617,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470333520","OrgName":"场口社区卫生服务中心","OrgType":null,"SingNum":6728,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470332923","OrgName":"大源社区卫生服务中心","OrgType":null,"SingNum":4387,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"571474867","OrgName":"富春街道社区卫生服务中心","OrgType":null,"SingNum":12455,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"74054672X","OrgName":"东洲街道社区卫生服务中心","OrgType":null,"SingNum":5281,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"733192468","OrgName":"春江街道社区卫生服务中心","OrgType":null,"SingNum":3398,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470333299","OrgName":"鹿山街道社区卫生服务中心","OrgType":null,"SingNum":1819,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"737751028","OrgName":"受降镇社区卫生服务中心","OrgType":null,"SingNum":1067,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"47033024X","OrgName":"高桥镇社区卫生服务中心","OrgType":null,"SingNum":4335,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"PDY110040","OrgName":"龙门镇社区卫生服务中心","OrgType":null,"SingNum":477,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"741011823","OrgName":"新桐乡社区卫生服务中心","OrgType":null,"SingNum":1159,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"741018195","OrgName":"春建乡社区卫生服务中心","OrgType":null,"SingNum":553,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"74101504X","OrgName":"永昌镇社区卫生服务中心","OrgType":null,"SingNum":647,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470331250","OrgName":"胥口镇社区卫生服务中心","OrgType":null,"SingNum":972,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"741002492","OrgName":"渌渚镇社区卫生服务中心","OrgType":null,"SingNum":823,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470333248","OrgName":"环山乡社区卫生服务中心","OrgType":null,"SingNum":931,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470332608","OrgName":"常安镇社区卫生服务中心","OrgType":null,"SingNum":1977,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470333627","OrgName":"湖源乡社区卫生服务中心","OrgType":null,"SingNum":666,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"759521549","OrgName":"上官乡社区卫生服务中心","OrgType":null,"SingNum":692,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470332640","OrgName":"常绿镇社区卫生服务中心","OrgType":null,"SingNum":1042,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"741009088","OrgName":"灵桥镇社区卫生服务中心","OrgType":null,"SingNum":2917,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"741009889","OrgName":"里山镇社区卫生服务中心","OrgType":null,"SingNum":1227,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"741033862","OrgName":"渔山乡社区卫生服务中心","OrgType":null,"SingNum":1321,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"470333838","OrgName":"洞桥镇社区卫生服务中心","OrgType":null,"SingNum":1188,"StartDate":null},{"CardType":null,"EndDate":null,"OrgCode":"fysmk","OrgName":"富阳市民卡","OrgType":null,"SingNum":129,"StartDate":null}]}}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td familySign
+            td 家庭医生签约
+            td totalSign
+            td 签约总数
+            td totalPercent
+            td 总签约率（%）
+            td signData
+            td 签约数据
+            td OrgName
+            td 签约机构
+            td SingNum
+            td 签约人数
+    table(cellspacing=0)
+        tr
+            td SingPercent
+            td 机构签约占比（%）
+            td RenewalPercent
+            td 机构签约率（%）
+    table(cellspacing=0)
+        tr
+            td creditSign
+            td 信用就医签约
+            td totalSign
+            td 签约总数
+            td signData
+            td 签约数据
+            td OrgName
+            td 签约机构
+            td SingNum
+            td 签约人数
+    p
+        b 6) 欠费统计
+    p 接口地址：
+    a(href="/arrearageStatistics") /arrearageStatistics
+    p 返回值：
+    pre.format {"totle":"1086743","totleArrearage":"613.55","weekArrearage":"3917.50","yearArrearage":{"qfqs":{"xAxis":["201710","201711","201712","201801","201802","201803","201804","201805","201806","201807","201808","201809","201810"],"source":[43,441.91,570.8,461,932.78,1081.03,715,1053.77,924.49,1243.04,477.32,1159.99,1385.55]},"qffb":{"xAxis":["富阳中医骨伤医院","富阳区第二人民医院","富阳区第一人民医院","富阳区妇幼保健院"],"source":[544.9,4039.54,2270.6,3634.64],"fbpie":[{"value":"544.9000","name":"富阳中医骨伤医院","selected":true},{"value":"4039.5400","name":"富阳区第二人民医院"},{"value":"2270.6000","name":"富阳区第一人民医院"},{"value":"3634.6400","name":"富阳区妇幼保健院"}]}}}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td totle
+            td 总金额
+            td totleArrearage
+            td 总欠费金额
+            td weekArrearage
+            td 七天欠费金额
+    table(cellspacing=0)
+        tr
+            td yearArrearage
+            td 年欠费金额分析
+            td qfqs
+            td 年欠费趋势分析
+            td xAxis
+            td x轴月份数据
+            td source
+            td 每月欠费数据
+    table(cellspacing=0)
+        tr
+            td yearArrearage
+            td 年欠费金额分析
+            td qfqs
+            td 年欠费分布分析
+            td name
+            td 医院名称
+            td value
+            td 每月欠费数据
+            td selected
+            td 是否选中状态
+    p
+        b 7) 支付统计（年）
+    p 接口地址：
+    a(href="/paymentStatistics") /paymentStatistics
+    p 返回值：
+    pre.format {"payChannel":{"totleNum":6480007.85,"totleAmount":0,"datas":[{"name":"支付宝（扫码）","payNum":18697,"payAmount":3688309.53},{"name":"支付宝","payNum":355,"payAmount":37867.35},{"name":"微信（扫码）","payNum":16727,"payAmount":2684104.62},{"name":"微信","payNum":265,"payAmount":23603.92},{"name":"市名卡","payNum":87,"payAmount":2526.35},{"name":"社保","payNum":854,"payAmount":43596.08}]},"hosChannel":[{"orgName":"高桥镇社区卫生服务中心","payNum":"2586","thirdPay":"248105.46","sbPay":"0.00","totlePay":"248105.46"},{"orgName":"富阳区第一人民医院","payNum":"45","thirdPay":"3590.50","sbPay":"4110.04","totlePay":"7700.54"},{"orgName":"富阳区妇幼保健院","payNum":"25186","thirdPay":"5156159.59","sbPay":"39486.04","totlePay":"5195645.63"},{"orgName":"富阳区第二人民医院","payNum":"3028","thirdPay":"358321.28","sbPay":"0.00","totlePay":"358321.28"},{"orgName":"富阳区第三人民医院","payNum":"490","thirdPay":"45753.98","sbPay":"0.00","totlePay":"45753.98"},{"orgName":"大源社区卫生服务中心","payNum":"1447","thirdPay":"141805.37","sbPay":"0.00","totlePay":"141805.37"},{"orgName":"鹿山街道社区卫生服务中心","payNum":"41","thirdPay":"1892.25","sbPay":"0.00","totlePay":"1892.25"},{"orgName":"场口社区卫生服务中心","payNum":"76","thirdPay":"4451.14","sbPay":"0.00","totlePay":"4451.14"},{"orgName":"受降镇社区卫生服务中心","payNum":"3284","thirdPay":"469738.70","sbPay":"0.00","totlePay":"469738.70"},{"orgName":"合计：","payNum":"36183","thirdPay":"6429818.27","sbPay":"43596.08","totlePay":"6473414.35"}]}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td payChannel
+            td 按支付渠道统计
+            td name
+            td 渠道名称
+            td payNum
+            td 支付笔数
+            td payAmount
+            td 支付金额
+    table(cellspacing=0)
+        tr
+            td hosChannel
+            td 按医院统计
+            td orgName
+            td 医院名称
+            td payNum
+            td 支付笔数
+            td thirdPay
+            td 第三方之支付
+            td sbPay
+            td 社保支付
+            td totlePay
+            td 总计支付
+    p
+        b 8) 医政服务日报
+    p 接口地址：
+    a(href="/adminDaily") /adminDaily
+    p 返回值：
+    pre.format {"dailyReport":{"medicalNum":[{"orgName":"富阳区第一人民医院","jzrc":2490,"ybmzNumRatio":"78.35","zfmNumRatio":"21.65","xkbNumRatio":"61.57"},{"orgName":"富阳区中医院","jzrc":2021,"ybmzNumRatio":"89.06","zfmNumRatio":"10.94","xkbNumRatio":"75.71"},{"orgName":"富阳区妇幼保健院","jzrc":1886,"ybmzNumRatio":"68.77","zfmNumRatio":"31.23","xkbNumRatio":"62.14"},{"orgName":"富春街道社区卫生服务中心","jzrc":1076,"ybmzNumRatio":"99.44","zfmNumRatio":"0.56","xkbNumRatio":"80.95"},{"orgName":"富阳区第二人民医院","jzrc":800,"ybmzNumRatio":"87.13","zfmNumRatio":"12.88","xkbNumRatio":"80.25"},{"orgName":"富阳中医骨伤医院","jzrc":730,"ybmzNumRatio":"0.00","zfmNumRatio":"100.00","xkbNumRatio":"50.82"},{"orgName":"东洲街道社区卫生服务中心","jzrc":538,"ybmzNumRatio":"89.78","zfmNumRatio":"10.22","xkbNumRatio":"77.51"},{"orgName":"新登镇社区卫生服务中心","jzrc":515,"ybmzNumRatio":"99.42","zfmNumRatio":"0.58","xkbNumRatio":"96.31"},{"orgName":"大源社区卫生服务中心","jzrc":426,"ybmzNumRatio":"87.56","zfmNumRatio":"12.44","xkbNumRatio":"63.38"},{"orgName":"万市社区卫生服务中心","jzrc":399,"ybmzNumRatio":"96.99","zfmNumRatio":"3.01","xkbNumRatio":"90.48"},{"orgName":"高桥镇社区卫生服务中心","jzrc":370,"ybmzNumRatio":"90.54","zfmNumRatio":"9.46","xkbNumRatio":"80.81"},{"orgName":"受降镇社区卫生服务中心","jzrc":312,"ybmzNumRatio":"83.01","zfmNumRatio":"16.99","xkbNumRatio":"35.90"},{"orgName":"场口社区卫生服务中心","jzrc":290,"ybmzNumRatio":"89.31","zfmNumRatio":"10.69","xkbNumRatio":"79.31"},{"orgName":"洞桥镇社区卫生服务中心","jzrc":285,"ybmzNumRatio":"98.95","zfmNumRatio":"1.05","xkbNumRatio":"90.53"},{"orgName":"鹿山街道社区卫生服务中心","jzrc":274,"ybmzNumRatio":"91.97","zfmNumRatio":"8.03","xkbNumRatio":"85.77"},{"orgName":"春江街道社区卫生服务中心","jzrc":242,"ybmzNumRatio":"84.30","zfmNumRatio":"15.70","xkbNumRatio":"73.55"},{"orgName":"灵桥镇社区卫生服务中心","jzrc":213,"ybmzNumRatio":"92.49","zfmNumRatio":"7.51","xkbNumRatio":"83.57"},{"orgName":"上官乡社区卫生服务中心","jzrc":182,"ybmzNumRatio":"96.70","zfmNumRatio":"3.30","xkbNumRatio":"90.11"},{"orgName":"春建乡社区卫生服务中心","jzrc":165,"ybmzNumRatio":"92.12","zfmNumRatio":"7.88","xkbNumRatio":"79.39"},{"orgName":"胥口镇社区卫生服务中心","jzrc":160,"ybmzNumRatio":"98.75","zfmNumRatio":"1.25","xkbNumRatio":"95.00"},{"orgName":"环山乡社区卫生服务中心","jzrc":156,"ybmzNumRatio":"96.15","zfmNumRatio":"3.85","xkbNumRatio":"83.33"},{"orgName":"新桐乡社区卫生服务中心","jzrc":142,"ybmzNumRatio":"98.59","zfmNumRatio":"1.41","xkbNumRatio":"93.66"},{"orgName":"常绿镇社区卫生服务中心","jzrc":138,"ybmzNumRatio":"100.00","zfmNumRatio":"0.00","xkbNumRatio":"98.55"},{"orgName":"常安镇社区卫生服务中心","jzrc":132,"ybmzNumRatio":"93.18","zfmNumRatio":"6.82","xkbNumRatio":"87.88"},{"orgName":"湖源乡社区卫生服务中心","jzrc":131,"ybmzNumRatio":"96.95","zfmNumRatio":"3.05","xkbNumRatio":"93.89"},{"orgName":"里山镇社区卫生服务中心","jzrc":126,"ybmzNumRatio":"94.44","zfmNumRatio":"5.56","xkbNumRatio":"86.51"},{"orgName":"富阳区第三人民医院","jzrc":126,"ybmzNumRatio":"92.06","zfmNumRatio":"7.94","xkbNumRatio":"0.79"},{"orgName":"龙门镇社区卫生服务中心","jzrc":110,"ybmzNumRatio":"90.00","zfmNumRatio":"10.00","xkbNumRatio":"43.64"},{"orgName":"永昌镇社区卫生服务中心","jzrc":106,"ybmzNumRatio":"99.06","zfmNumRatio":"0.94","xkbNumRatio":"94.34"},{"orgName":"渌渚镇社区卫生服务中心","jzrc":80,"ybmzNumRatio":"98.75","zfmNumRatio":"1.25","xkbNumRatio":"98.75"},{"orgName":"渔山乡社区卫生服务中心","jzrc":72,"ybmzNumRatio":"93.06","zfmNumRatio":"6.94","xkbNumRatio":"81.94"}],"medicalFee":[{"orgName":"富阳区第一人民医院","jzFee":345450.87,"jcFee":"138.74","ybbxFeeRatio":"41.84","ybzfFeeRatio":"58.16"},{"orgName":"富阳区中医院","jzFee":335422.28,"jcFee":"165.97","ybbxFeeRatio":"55.94","ybzfFeeRatio":"44.06"},{"orgName":"富阳区妇幼保健院","jzFee":198153.23,"jcFee":"105.07","ybbxFeeRatio":"35.60","ybzfFeeRatio":"44.04"},{"orgName":"富春街道社区卫生服务中心","jzFee":108767.01,"jcFee":"101.08","ybbxFeeRatio":"85.60","ybzfFeeRatio":"14.40"},{"orgName":"富阳区第二人民医院","jzFee":120121.98,"jcFee":"150.15","ybbxFeeRatio":"51.06","ybzfFeeRatio":"38.59"},{"orgName":"富阳中医骨伤医院","jzFee":205592.27,"jcFee":"281.63","ybbxFeeRatio":"45.53","ybzfFeeRatio":"54.47"},{"orgName":"东洲街道社区卫生服务中心","jzFee":57697.41,"jcFee":"107.24","ybbxFeeRatio":"72.65","ybzfFeeRatio":"27.35"},{"orgName":"新登镇社区卫生服务中心","jzFee":46738.29,"jcFee":"90.75","ybbxFeeRatio":"80.28","ybzfFeeRatio":"19.72"},{"orgName":"大源社区卫生服务中心","jzFee":48092.88,"jcFee":"112.89","ybbxFeeRatio":"61.16","ybzfFeeRatio":"38.84"},{"orgName":"万市社区卫生服务中心","jzFee":45318.83,"jcFee":"113.58","ybbxFeeRatio":"69.39","ybzfFeeRatio":"30.61"},{"orgName":"高桥镇社区卫生服务中心","jzFee":34293.97,"jcFee":"92.69","ybbxFeeRatio":"68.76","ybzfFeeRatio":"31.24"},{"orgName":"受降镇社区卫生服务中心","jzFee":80886.23,"jcFee":"259.25","ybbxFeeRatio":"61.47","ybzfFeeRatio":"38.53"},{"orgName":"场口社区卫生服务中心","jzFee":28709.46,"jcFee":"99.00","ybbxFeeRatio":"68.53","ybzfFeeRatio":"31.47"},{"orgName":"洞桥镇社区卫生服务中心","jzFee":19085.13,"jcFee":"66.97","ybbxFeeRatio":"69.07","ybzfFeeRatio":"30.93"},{"orgName":"鹿山街道社区卫生服务中心","jzFee":16563.65,"jcFee":"60.45","ybbxFeeRatio":"72.22","ybzfFeeRatio":"27.78"},{"orgName":"春江街道社区卫生服务中心","jzFee":24439.52,"jcFee":"100.99","ybbxFeeRatio":"60.87","ybzfFeeRatio":"39.13"},{"orgName":"灵桥镇社区卫生服务中心","jzFee":17222.06,"jcFee":"80.85","ybbxFeeRatio":"72.52","ybzfFeeRatio":"27.48"},{"orgName":"上官乡社区卫生服务中心","jzFee":8469.02,"jcFee":"46.53","ybbxFeeRatio":"63.26","ybzfFeeRatio":"36.74"},{"orgName":"春建乡社区卫生服务中心","jzFee":13477.94,"jcFee":"81.68","ybbxFeeRatio":"69.35","ybzfFeeRatio":"30.65"},{"orgName":"胥口镇社区卫生服务中心","jzFee":17789.85,"jcFee":"111.19","ybbxFeeRatio":"76.88","ybzfFeeRatio":"23.12"},{"orgName":"环山乡社区卫生服务中心","jzFee":16217.33,"jcFee":"103.96","ybbxFeeRatio":"59.75","ybzfFeeRatio":"40.25"},{"orgName":"新桐乡社区卫生服务中心","jzFee":13299.86,"jcFee":"93.66","ybbxFeeRatio":"75.06","ybzfFeeRatio":"24.94"},{"orgName":"常绿镇社区卫生服务中心","jzFee":11051.7,"jcFee":"80.08","ybbxFeeRatio":"73.99","ybzfFeeRatio":"26.01"},{"orgName":"常安镇社区卫生服务中心","jzFee":11539.78,"jcFee":"87.42","ybbxFeeRatio":"74.11","ybzfFeeRatio":"25.89"},{"orgName":"湖源乡社区卫生服务中心","jzFee":10300.63,"jcFee":"78.63","ybbxFeeRatio":"66.55","ybzfFeeRatio":"33.45"},{"orgName":"里山镇社区卫生服务中心","jzFee":12925.69,"jcFee":"102.58","ybbxFeeRatio":"75.12","ybzfFeeRatio":"24.88"},{"orgName":"富阳区第三人民医院","jzFee":25873.37,"jcFee":"205.34","ybbxFeeRatio":"70.59","ybzfFeeRatio":"26.94"},{"orgName":"龙门镇社区卫生服务中心","jzFee":7695.91,"jcFee":"69.96","ybbxFeeRatio":"78.00","ybzfFeeRatio":"22.00"},{"orgName":"永昌镇社区卫生服务中心","jzFee":8451.63,"jcFee":"79.73","ybbxFeeRatio":"77.15","ybzfFeeRatio":"22.85"},{"orgName":"渌渚镇社区卫生服务中心","jzFee":6728.1,"jcFee":"84.10","ybbxFeeRatio":"75.00","ybzfFeeRatio":"25.00"},{"orgName":"渔山乡社区卫生服务中心","jzFee":6883.61,"jcFee":"95.61","ybbxFeeRatio":"77.10","ybzfFeeRatio":"22.90"}],"medicalRatio":{"xAxis":["富阳区第一人民医院","富阳区妇幼保健院","富阳区第二人民医院","富阳区第三人民医院","富阳中医骨伤医院","富阳区中医院"],"source":[{"KSSCFZRCData":"25.79","SYCFZRCData":"12.00","Time":"/Date(1540051200000+0800)/","YPZEData":"50.26","ZBYWData":"23.11"},{"KSSCFZRCData":"22.89","SYCFZRCData":"9.00","Time":"/Date(1540137600000+0800)/","YPZEData":"44.12","ZBYWData":"22.87"},{"KSSCFZRCData":"22.20","SYCFZRCData":"11.00","Time":"/Date(1540224000000+0800)/","YPZEData":"48.07","ZBYWData":"37.31"},{"KSSCFZRCData":"23.95","SYCFZRCData":"13.00","Time":"/Date(1540310400000+0800)/","YPZEData":"44.63","ZBYWData":"24.58"},{"KSSCFZRCData":"24.40","SYCFZRCData":"12.00","Time":"/Date(1540396800000+0800)/","YPZEData":"44.71","ZBYWData":"26.41"},{"KSSCFZRCData":"23.09","SYCFZRCData":"13.00","Time":"/Date(1540483200000+0800)/","YPZEData":"46.05","ZBYWData":"23.44"},{"KSSCFZRCData":"27.67","SYCFZRCData":"13.00","Time":"/Date(1540569600000+0800)/","YPZEData":"46.36","ZBYWData":"21.09"},{"KSSCFZRCData":"29.67","SYCFZRCData":"15.00","Time":"/Date(1540656000000+0800)/","YPZEData":"45.45","ZBYWData":"17.30"}]}},"monthlyReport":[{"name":"门诊人次（人）","ItemNum":"278227.00"},{"name":"急诊人次（人）","ItemNum":"39033.00"},{"name":"出院人次（人）","ItemNum":"9131.00"},{"name":"危重病人数（人）","ItemNum":"346.00"},{"name":"死亡人数（人）","ItemNum":"7.00"},{"name":"预约诊疗人数（人）","ItemNum":"192399.00"},{"name":"剖宫产率（%）","ItemNum":"23.37"},{"name":"医疗业务收入（万元）","ItemNum":"12599.12"},{"name":"药品收入占业务收入比例（%）","ItemNum":"60.92"},{"name":"基本药物占药品收入比例（%）","ItemNum":"42.79"},{"name":"药品收入（不含中药饮片）（万元）","ItemNum":"2676.63"},{"name":"中药饮片收入（万元）","ItemNum":"591.68"},{"name":"门急诊均次费用（元）","ItemNum":"1005.12"},{"name":"出院均次费用（元）","ItemNum":"50343.74"},{"name":"开放床位数（张）","ItemNum":"2473.00"},{"name":"开放床位使用率（%）","ItemNum":"104.04"},{"name":"平均住院日（日）","ItemNum":"81.69"},{"name":"医疗事故争议投诉数（起）","ItemNum":"9.00"},{"name":"发生赔偿事故争议数（起）","ItemNum":"5.00"},{"name":"赔偿总金额（万元）","ItemNum":"24.05"},{"name":"责任追究处罚总金额（万元）","ItemNum":"0.00"},{"name":"医疗质量检查处罚人次（人）","ItemNum":"197.00"},{"name":"医疗安全大排查次数（次）","ItemNum":"13.00"},{"name":"开展病种数（个）","ItemNum":"361.00"},{"name":"应入径病例数（例）","ItemNum":"6188.00"},{"name":"实际入径病例数（例）","ItemNum":"4505.00"},{"name":"正常出径数（例）","ItemNum":"4074.00"},{"name":"实施病区数（个）","ItemNum":"64.00"},{"name":"实施病区总床护比","ItemNum":"16.18"},{"name":"实施病区数占全院百分比（%）","ItemNum":"77.40"},{"name":"手术例数（例）","ItemNum":"2533.00"},{"name":"III类手术数（例）","ItemNum":"1035.00"},{"name":"IV类手术数（例）","ItemNum":"478.00"},{"name":"全院性病例讨论次数（次）","ItemNum":"18.00"},{"name":"全院性业务讲座次数（次）","ItemNum":"14.00"},{"name":"新派出进修人数（人）","ItemNum":"8.00"},{"name":"新增在职学历教育人数（人）","ItemNum":"0.00"},{"name":"新发表论文数（篇）","ItemNum":"9.00"},{"name":"在建区级科研项目数（个）","ItemNum":"46.00"},{"name":"在建市级以上科研项目数（个）","ItemNum":"88.00"},{"name":"双向转诊接收上转人数（人）","ItemNum":"10957.00"},{"name":"双向转诊下转人数（人）","ItemNum":"2543.00"},{"name":"下派社区对口支援人数（人）","ItemNum":"41.00"},{"name":"抗菌药物占药品收入比例（%）","ItemNum":"10.54"},{"name":"门急诊病人抗菌药物使用率（%）","ItemNum":"12.18"},{"name":"出院病人抗菌药物使用率（%）","ItemNum":"40.66"},{"name":"I类切口抗菌药物使用率（%）","ItemNum":"24.90"},{"name":"开展临床检验项目数（项）","ItemNum":"1647.00"},{"name":"配备药品目录数（种）","ItemNum":"3730.00"},{"name":"配备基本药物数量（种）","ItemNum":"1984.00"}]}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td dailyReport
+            td 日报
+            td medicalNum
+            td 就诊人次统计
+            td orgName
+            td 就诊单位
+            td ybmzNumRatio
+            td 医保门诊 人次占比
+            td zfmNumRatio
+            td 自费门诊 人次占比
+            td xkbNumRatio
+            td 先看病后 付费人次占比
+    table(cellspacing=0)
+        tr
+            td medicalFee
+            td 就诊费用统计
+            td orgName
+            td 就诊单位
+            td jzFee
+            td 就诊费用 (万元)
+            td jcFee
+            td 均次 费用(元)
+            td ybbxFeeRatio
+            td 医保报销 费用比
+            td ybzfFeeRatio
+            td 医保自费 费用比
+    table(cellspacing=0)
+        tr
+            td medicalRatio
+            td 占比统计
+            td xAxis
+            td x轴数据-就诊单位
+            td source
+            td y轴数据
+            td YPZEData
+            td 基本药占比
+            td KSSCFZRCData
+            td 门诊抗生素
+            td YPZEData
+            td 药占比
+            td SYCFZRCData
+            td 处方输液占比
+
+    table(cellspacing=0)
+        tr
+            td dailyReport
+            td 日报
+            td totleArrearage
+            td 总欠费金额
+            td monthlyReport
+            td 七天欠费金额
+    p
+        b 9) 健康档案调阅统计(年)
+    p 接口地址：
+    a(href="/healthRecords") 10.10.117.57.0:3000/healthRecords
+    p 返回值：
+    pre.format {"datas":[{"InvokePHR_Num":216809,"InvokePHR_Rate":17.34,"Total_Num":1250333,"ZZJGDM":"470331277","ZZJGMC":"富阳区第一人民医院"},{"InvokePHR_Num":336145,"InvokePHR_Rate":43.89,"Total_Num":765878,"ZZJGDM":"729091015","ZZJGMC":"富阳区中医院"},{"InvokePHR_Num":307574,"InvokePHR_Rate":52.51,"Total_Num":585735,"ZZJGDM":"470331285","ZZJGMC":"富阳区妇幼保健院"},{"InvokePHR_Num":4711,"InvokePHR_Rate":0.88,"Total_Num":533571,"ZZJGDM":"571474867","ZZJGMC":"富春街道社区卫生服务中心"},{"InvokePHR_Num":98854,"InvokePHR_Rate":26.79,"Total_Num":368936,"ZZJGDM":"470331293","ZZJGMC":"富阳区第二人民医院"},{"InvokePHR_Num":54889,"InvokePHR_Rate":19.32,"Total_Num":284125,"ZZJGDM":"470332560","ZZJGMC":"富阳中医骨伤医院"},{"InvokePHR_Num":1733,"InvokePHR_Rate":0.67,"Total_Num":259276,"ZZJGDM":"74054672X","ZZJGMC":"东洲街道社区卫生服务中心"},{"InvokePHR_Num":96,"InvokePHR_Rate":0.04,"Total_Num":231922,"ZZJGDM":"470332923","ZZJGMC":"大源社区卫生服务中心"},{"InvokePHR_Num":167,"InvokePHR_Rate":0.09,"Total_Num":189198,"ZZJGDM":"PDY110016","ZZJGMC":"新登镇社区卫生服务中心"},{"InvokePHR_Num":471,"InvokePHR_Rate":0.27,"Total_Num":173477,"ZZJGDM":"470333520","ZZJGMC":"场口社区卫生服务中心"},{"InvokePHR_Num":257,"InvokePHR_Rate":0.15,"Total_Num":169007,"ZZJGDM":"47033024X","ZZJGMC":"高桥镇社区卫生服务中心"},{"InvokePHR_Num":223,"InvokePHR_Rate":0.14,"Total_Num":157855,"ZZJGDM":"470331269","ZZJGMC":"万市社区卫生服务中心"},{"InvokePHR_Num":576,"InvokePHR_Rate":0.38,"Total_Num":152062,"ZZJGDM":"733192468","ZZJGMC":"春江街道社区卫生服务中心"},{"InvokePHR_Num":303,"InvokePHR_Rate":0.21,"Total_Num":147371,"ZZJGDM":"737751028","ZZJGMC":"受降镇社区卫生服务中心"},{"InvokePHR_Num":163,"InvokePHR_Rate":0.15,"Total_Num":106958,"ZZJGDM":"470333838","ZZJGMC":"洞桥镇社区卫生服务中心"},{"InvokePHR_Num":161,"InvokePHR_Rate":0.17,"Total_Num":96695,"ZZJGDM":"741009088","ZZJGMC":"灵桥镇社区卫生服务中心"},{"InvokePHR_Num":559,"InvokePHR_Rate":0.62,"Total_Num":89529,"ZZJGDM":"470332608","ZZJGMC":"常安镇社区卫生服务中心"},{"InvokePHR_Num":1259,"InvokePHR_Rate":1.46,"Total_Num":85958,"ZZJGDM":"470333299","ZZJGMC":"鹿山街道社区卫生服务中心"},{"InvokePHR_Num":1467,"InvokePHR_Rate":2.07,"Total_Num":71000,"ZZJGDM":"741018195","ZZJGMC":"春建乡社区卫生服务中心"},{"InvokePHR_Num":117,"InvokePHR_Rate":0.17,"Total_Num":70476,"ZZJGDM":"470332640","ZZJGMC":"常绿镇社区卫生服务中心"},{"InvokePHR_Num":2013,"InvokePHR_Rate":2.94,"Total_Num":68536,"ZZJGDM":"470333248","ZZJGMC":"环山乡社区卫生服务中心"},{"InvokePHR_Num":274,"InvokePHR_Rate":0.43,"Total_Num":64019,"ZZJGDM":"470331250","ZZJGMC":"胥口镇社区卫生服务中心"},{"InvokePHR_Num":855,"InvokePHR_Rate":1.35,"Total_Num":63154,"ZZJGDM":"741033862","ZZJGMC":"渔山乡社区卫生服务中心"},{"InvokePHR_Num":10,"InvokePHR_Rate":0.02,"Total_Num":62302,"ZZJGDM":"741011823","ZZJGMC":"新桐乡社区卫生服务中心"},{"InvokePHR_Num":320,"InvokePHR_Rate":0.54,"Total_Num":59653,"ZZJGDM":"741009889","ZZJGMC":"里山镇社区卫生服务中心"},{"InvokePHR_Num":206,"InvokePHR_Rate":0.38,"Total_Num":54110,"ZZJGDM":"741002492","ZZJGMC":"渌渚镇社区卫生服务中心"},{"InvokePHR_Num":36110,"InvokePHR_Rate":75.79,"Total_Num":47645,"ZZJGDM":"470332499","ZZJGMC":"富阳区第三人民医院"},{"InvokePHR_Num":10,"InvokePHR_Rate":0.02,"Total_Num":46350,"ZZJGDM":"470333627","ZZJGMC":"湖源乡社区卫生服务中心"},{"InvokePHR_Num":303,"InvokePHR_Rate":0.66,"Total_Num":45969,"ZZJGDM":"74101504X","ZZJGMC":"永昌镇社区卫生服务中心"},{"InvokePHR_Num":160,"InvokePHR_Rate":0.35,"Total_Num":45289,"ZZJGDM":"759521549","ZZJGMC":"上官乡社区卫生服务中心"},{"InvokePHR_Num":208,"InvokePHR_Rate":0.56,"Total_Num":37397,"ZZJGDM":"PDY110040","ZZJGMC":"龙门镇社区卫生服务中心"}],"Total_Num":6383786,"InvokePHR_Num":1067003,"InvokePHR_Rate":"16.71"}
+    p 参数解释：
+    table(cellspacing=0)
+        tr
+            td Total_Num
+            td 总就诊次数
+            td InvokePHR_Num
+            td 健康档案调阅次数
+            td InvokePHR_Rate
+            td 调阅率
+    script.
+        var doms = document.getElementsByClassName('format');
+
+        //console.log(doms)
+
+        for (var i = 0; i <= doms.length - 1; i++) {
+            console.log(doms[i])
+            var text = doms[i].innerText;
+            if (text) {
+                doms[i].innerText = JSON.stringify(JSON.parse(text), null, 2);
+            }
+        }

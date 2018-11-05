@@ -1,0 +1,471 @@
+{
+    "familySign": {
+        "totalSign": 233021,
+        "i": 25,
+        "totalPercent": "77.13",
+        "signData": [
+            {
+                "OrgName": "新登镇社区卫生服务中心",
+                "SingNum": "21979",
+                "SingPercent": "9.43",
+                "RenewalPercent": "71.18"
+            },
+            {
+                "OrgName": "万市社区卫生服务中心",
+                "SingNum": "8334",
+                "SingPercent": "3.58",
+                "RenewalPercent": "83.2"
+            },
+            {
+                "OrgName": "场口社区卫生服务中心",
+                "SingNum": "13507",
+                "SingPercent": "5.8",
+                "RenewalPercent": "81.9"
+            },
+            {
+                "OrgName": "大源社区卫生服务中心",
+                "SingNum": "15354",
+                "SingPercent": "6.59",
+                "RenewalPercent": "79.2"
+            },
+            {
+                "OrgName": "富春街道社区卫生服务中心",
+                "SingNum": "46585",
+                "SingPercent": "19.99",
+                "RenewalPercent": "70.69"
+            },
+            {
+                "OrgName": "东洲街道社区卫生服务中心",
+                "SingNum": "17245",
+                "SingPercent": "7.4",
+                "RenewalPercent": "77.36"
+            },
+            {
+                "OrgName": "春江街道社区卫生服务中心",
+                "SingNum": "10464",
+                "SingPercent": "4.49",
+                "RenewalPercent": "71.88"
+            },
+            {
+                "OrgName": "鹿山街道社区卫生服务中心",
+                "SingNum": "7898",
+                "SingPercent": "3.39",
+                "RenewalPercent": "77.43"
+            },
+            {
+                "OrgName": "受降镇社区卫生服务中心",
+                "SingNum": "6728",
+                "SingPercent": "2.89",
+                "RenewalPercent": "75.22"
+            },
+            {
+                "OrgName": "高桥镇社区卫生服务中心",
+                "SingNum": "11917",
+                "SingPercent": "5.11",
+                "RenewalPercent": "74.33"
+            },
+            {
+                "OrgName": "龙门镇社区卫生服务中心",
+                "SingNum": "2476",
+                "SingPercent": "1.06",
+                "RenewalPercent": "80.06"
+            },
+            {
+                "OrgName": "新桐乡社区卫生服务中心",
+                "SingNum": "4896",
+                "SingPercent": "2.1",
+                "RenewalPercent": "83.71"
+            },
+            {
+                "OrgName": "春建乡社区卫生服务中心",
+                "SingNum": "3123",
+                "SingPercent": "1.34",
+                "RenewalPercent": "87.78"
+            },
+            {
+                "OrgName": "永昌镇社区卫生服务中心",
+                "SingNum": "3644",
+                "SingPercent": "1.56",
+                "RenewalPercent": "76.75"
+            },
+            {
+                "OrgName": "胥口镇社区卫生服务中心",
+                "SingNum": "6043",
+                "SingPercent": "2.59",
+                "RenewalPercent": "75"
+            },
+            {
+                "OrgName": "渌渚镇社区卫生服务中心",
+                "SingNum": "5673",
+                "SingPercent": "2.43",
+                "RenewalPercent": "76.99"
+            },
+            {
+                "OrgName": "环山乡社区卫生服务中心",
+                "SingNum": "3998",
+                "SingPercent": "1.72",
+                "RenewalPercent": "73.51"
+            },
+            {
+                "OrgName": "常安镇社区卫生服务中心",
+                "SingNum": "7939",
+                "SingPercent": "3.41",
+                "RenewalPercent": "72.76"
+            },
+            {
+                "OrgName": "湖源乡社区卫生服务中心",
+                "SingNum": "4031",
+                "SingPercent": "1.73",
+                "RenewalPercent": "78.32"
+            },
+            {
+                "OrgName": "上官乡社区卫生服务中心",
+                "SingNum": "2976",
+                "SingPercent": "1.28",
+                "RenewalPercent": "78.17"
+            },
+            {
+                "OrgName": "常绿镇社区卫生服务中心",
+                "SingNum": "5054",
+                "SingPercent": "2.17",
+                "RenewalPercent": "89.17"
+            },
+            {
+                "OrgName": "灵桥镇社区卫生服务中心",
+                "SingNum": "7928",
+                "SingPercent": "3.4",
+                "RenewalPercent": "76.94"
+            },
+            {
+                "OrgName": "里山镇社区卫生服务中心",
+                "SingNum": "3590",
+                "SingPercent": "1.54",
+                "RenewalPercent": "82.74"
+            },
+            {
+                "OrgName": "渔山乡社区卫生服务中心",
+                "SingNum": "4346",
+                "SingPercent": "1.87",
+                "RenewalPercent": "75.88"
+            },
+            {
+                "OrgName": "洞桥镇社区卫生服务中心",
+                "SingNum": "7293",
+                "SingPercent": "3.13",
+                "RenewalPercent": "80.83"
+            }
+        ]
+    },
+    "creditSign": {
+        "totalSign": 306389,
+        "signData": [
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "0000",
+                "OrgName": "富阳区卫生系统",
+                "OrgType": null,
+                "SingNum": 88,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "wsj",
+                "OrgName": "富阳区卫计局",
+                "OrgType": null,
+                "SingNum": 57610,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470331277",
+                "OrgName": "富阳区第一人民医院",
+                "OrgType": null,
+                "SingNum": 120020,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470331293",
+                "OrgName": "富阳区第二人民医院",
+                "OrgType": null,
+                "SingNum": 3266,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "729091015",
+                "OrgName": "富阳区中医院",
+                "OrgType": null,
+                "SingNum": 18603,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470331285",
+                "OrgName": "富阳区妇幼保健院",
+                "OrgType": null,
+                "SingNum": 10165,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470332560",
+                "OrgName": "富阳中医骨伤医院",
+                "OrgType": null,
+                "SingNum": 37105,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470332499",
+                "OrgName": "富阳区第三人民医院",
+                "OrgType": null,
+                "SingNum": 157,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "PDY110016",
+                "OrgName": "新登镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 3420,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470331269",
+                "OrgName": "万市社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1624,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470333520",
+                "OrgName": "场口社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 6666,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470332923",
+                "OrgName": "大源社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 4034,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "571474867",
+                "OrgName": "富春街道社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 12238,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "74054672X",
+                "OrgName": "东洲街道社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 5101,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "733192468",
+                "OrgName": "春江街道社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 3430,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470333299",
+                "OrgName": "鹿山街道社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1395,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "737751028",
+                "OrgName": "受降镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1050,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "47033024X",
+                "OrgName": "高桥镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 4212,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "PDY110040",
+                "OrgName": "龙门镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 469,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "741011823",
+                "OrgName": "新桐乡社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1149,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "741018195",
+                "OrgName": "春建乡社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 535,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "74101504X",
+                "OrgName": "永昌镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 638,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470331250",
+                "OrgName": "胥口镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 924,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "741002492",
+                "OrgName": "渌渚镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 792,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470333248",
+                "OrgName": "环山乡社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 854,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470332608",
+                "OrgName": "常安镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1947,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470333627",
+                "OrgName": "湖源乡社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 657,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "759521549",
+                "OrgName": "上官乡社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 718,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470332640",
+                "OrgName": "常绿镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1041,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "741009088",
+                "OrgName": "灵桥镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 2662,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "741009889",
+                "OrgName": "里山镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1231,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "741033862",
+                "OrgName": "渔山乡社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1344,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "470333838",
+                "OrgName": "洞桥镇社区卫生服务中心",
+                "OrgType": null,
+                "SingNum": 1110,
+                "StartDate": null
+            },
+            {
+                "CardType": null,
+                "EndDate": null,
+                "OrgCode": "fysmk",
+                "OrgName": "富阳市民卡",
+                "OrgType": null,
+                "SingNum": 134,
+                "StartDate": null
+            }
+        ]
+    },
+    "timeStamp": "2018-10-31T03:29:40.154Z"
+}

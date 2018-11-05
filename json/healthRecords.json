@@ -1,0 +1,225 @@
+{
+    "datas": [
+        {
+            "InvokePHR_Num": 217981,
+            "InvokePHR_Rate": 17.42,
+            "Total_Num": 1251186,
+            "ZZJGDM": "470331277",
+            "ZZJGMC": "富阳区第一人民医院"
+        },
+        {
+            "InvokePHR_Num": 339208,
+            "InvokePHR_Rate": 44.26,
+            "Total_Num": 766398,
+            "ZZJGDM": "729091015",
+            "ZZJGMC": "富阳区中医院"
+        },
+        {
+            "InvokePHR_Num": 308541,
+            "InvokePHR_Rate": 52.44,
+            "Total_Num": 588387,
+            "ZZJGDM": "470331285",
+            "ZZJGMC": "富阳区妇幼保健院"
+        },
+        {
+            "InvokePHR_Num": 4731,
+            "InvokePHR_Rate": 0.88,
+            "Total_Num": 536150,
+            "ZZJGDM": "571474867",
+            "ZZJGMC": "富春街道社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 99344,
+            "InvokePHR_Rate": 26.89,
+            "Total_Num": 369497,
+            "ZZJGDM": "470331293",
+            "ZZJGMC": "富阳区第二人民医院"
+        },
+        {
+            "InvokePHR_Num": 55247,
+            "InvokePHR_Rate": 19.42,
+            "Total_Num": 284511,
+            "ZZJGDM": "470332560",
+            "ZZJGMC": "富阳中医骨伤医院"
+        },
+        {
+            "InvokePHR_Num": 1734,
+            "InvokePHR_Rate": 0.67,
+            "Total_Num": 259766,
+            "ZZJGDM": "74054672X",
+            "ZZJGMC": "东洲街道社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 98,
+            "InvokePHR_Rate": 0.04,
+            "Total_Num": 232239,
+            "ZZJGDM": "470332923",
+            "ZZJGMC": "大源社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 167,
+            "InvokePHR_Rate": 0.09,
+            "Total_Num": 190197,
+            "ZZJGDM": "PDY110016",
+            "ZZJGMC": "新登镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 476,
+            "InvokePHR_Rate": 0.27,
+            "Total_Num": 174153,
+            "ZZJGDM": "470333520",
+            "ZZJGMC": "场口社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 262,
+            "InvokePHR_Rate": 0.15,
+            "Total_Num": 169498,
+            "ZZJGDM": "47033024X",
+            "ZZJGMC": "高桥镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 225,
+            "InvokePHR_Rate": 0.14,
+            "Total_Num": 158113,
+            "ZZJGDM": "470331269",
+            "ZZJGMC": "万市社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 574,
+            "InvokePHR_Rate": 0.38,
+            "Total_Num": 152798,
+            "ZZJGDM": "733192468",
+            "ZZJGMC": "春江街道社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 311,
+            "InvokePHR_Rate": 0.21,
+            "Total_Num": 147745,
+            "ZZJGDM": "737751028",
+            "ZZJGMC": "受降镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 163,
+            "InvokePHR_Rate": 0.15,
+            "Total_Num": 107112,
+            "ZZJGDM": "470333838",
+            "ZZJGMC": "洞桥镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 159,
+            "InvokePHR_Rate": 0.16,
+            "Total_Num": 96734,
+            "ZZJGDM": "741009088",
+            "ZZJGMC": "灵桥镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 557,
+            "InvokePHR_Rate": 0.62,
+            "Total_Num": 89684,
+            "ZZJGDM": "470332608",
+            "ZZJGMC": "常安镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 1264,
+            "InvokePHR_Rate": 1.46,
+            "Total_Num": 86483,
+            "ZZJGDM": "470333299",
+            "ZZJGMC": "鹿山街道社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 1467,
+            "InvokePHR_Rate": 2.06,
+            "Total_Num": 71098,
+            "ZZJGDM": "741018195",
+            "ZZJGMC": "春建乡社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 118,
+            "InvokePHR_Rate": 0.17,
+            "Total_Num": 70770,
+            "ZZJGDM": "470332640",
+            "ZZJGMC": "常绿镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 2039,
+            "InvokePHR_Rate": 2.97,
+            "Total_Num": 68640,
+            "ZZJGDM": "470333248",
+            "ZZJGMC": "环山乡社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 276,
+            "InvokePHR_Rate": 0.43,
+            "Total_Num": 64062,
+            "ZZJGDM": "470331250",
+            "ZZJGMC": "胥口镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 849,
+            "InvokePHR_Rate": 1.34,
+            "Total_Num": 63346,
+            "ZZJGDM": "741033862",
+            "ZZJGMC": "渔山乡社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 10,
+            "InvokePHR_Rate": 0.02,
+            "Total_Num": 62343,
+            "ZZJGDM": "741011823",
+            "ZZJGMC": "新桐乡社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 328,
+            "InvokePHR_Rate": 0.55,
+            "Total_Num": 59649,
+            "ZZJGDM": "741009889",
+            "ZZJGMC": "里山镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 208,
+            "InvokePHR_Rate": 0.38,
+            "Total_Num": 54315,
+            "ZZJGDM": "741002492",
+            "ZZJGMC": "渌渚镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 36196,
+            "InvokePHR_Rate": 75.89,
+            "Total_Num": 47698,
+            "ZZJGDM": "470332499",
+            "ZZJGMC": "富阳区第三人民医院"
+        },
+        {
+            "InvokePHR_Num": 10,
+            "InvokePHR_Rate": 0.02,
+            "Total_Num": 46495,
+            "ZZJGDM": "470333627",
+            "ZZJGMC": "湖源乡社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 310,
+            "InvokePHR_Rate": 0.67,
+            "Total_Num": 46169,
+            "ZZJGDM": "74101504X",
+            "ZZJGMC": "永昌镇社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 162,
+            "InvokePHR_Rate": 0.36,
+            "Total_Num": 45498,
+            "ZZJGDM": "759521549",
+            "ZZJGMC": "上官乡社区卫生服务中心"
+        },
+        {
+            "InvokePHR_Num": 211,
+            "InvokePHR_Rate": 0.56,
+            "Total_Num": 37594,
+            "ZZJGDM": "PDY110040",
+            "ZZJGMC": "龙门镇社区卫生服务中心"
+        }
+    ],
+    "Total_Num": 6398328,
+    "InvokePHR_Num": 1073226,
+    "InvokePHR_Rate": "16.77",
+    "timeStamp": "2018-10-31T02:24:14.373Z"
+}
